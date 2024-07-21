@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 06, 2022 at 09:57 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- Hôte : 127.0.0.1
+-- Généré le : dim. 21 juil. 2024 à 17:06
+-- Version du serveur : 10.4.27-MariaDB
+-- Version de PHP : 8.0.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `attendancemsystem`
+-- Base de données : `attendancemsystem`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbladmin`
+-- Structure de la table `tbladmin`
 --
 
 CREATE TABLE `tbladmin` (
@@ -33,10 +33,10 @@ CREATE TABLE `tbladmin` (
   `lastName` varchar(50) NOT NULL,
   `emailAddress` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tbladmin`
+-- Déchargement des données de la table `tbladmin`
 --
 
 INSERT INTO `tbladmin` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`) VALUES
@@ -45,7 +45,7 @@ INSERT INTO `tbladmin` (`Id`, `firstName`, `lastName`, `emailAddress`, `password
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblattendance`
+-- Structure de la table `tblattendance`
 --
 
 CREATE TABLE `tblattendance` (
@@ -56,75 +56,75 @@ CREATE TABLE `tblattendance` (
   `sessionTermId` varchar(10) NOT NULL,
   `status` varchar(10) NOT NULL,
   `dateTimeTaken` varchar(20) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblattendance`
+-- Déchargement des données de la table `tblattendance`
 --
 
 INSERT INTO `tblattendance` (`Id`, `admissionNo`, `classId`, `classArmId`, `sessionTermId`, `status`, `dateTimeTaken`) VALUES
-(162, 'ASDFLKJ', '1', '2', '1', '1', '2020-11-01'),
-(163, 'HSKSDD', '1', '2', '1', '1', '2020-11-01'),
-(164, 'JSLDKJ', '1', '2', '1', '1', '2020-11-01'),
-(172, 'HSKDS9EE', '1', '4', '1', '1', '2020-11-01'),
-(171, 'JKADA', '1', '4', '1', '0', '2020-11-01'),
-(170, 'JSFSKDJ', '1', '4', '1', '1', '2020-11-01'),
-(173, 'ASDFLKJ', '1', '2', '1', '1', '2020-11-19'),
-(174, 'HSKSDD', '1', '2', '1', '1', '2020-11-19'),
-(175, 'JSLDKJ', '1', '2', '1', '1', '2020-11-19'),
-(176, 'JSFSKDJ', '1', '4', '1', '0', '2021-07-15'),
-(177, 'JKADA', '1', '4', '1', '0', '2021-07-15'),
-(178, 'HSKDS9EE', '1', '4', '1', '0', '2021-07-15'),
-(179, 'ASDFLKJ', '1', '2', '1', '0', '2021-09-27'),
-(180, 'HSKSDD', '1', '2', '1', '1', '2021-09-27'),
-(181, 'JSLDKJ', '1', '2', '1', '1', '2021-09-27'),
-(182, 'ASDFLKJ', '1', '2', '1', '0', '2021-10-06'),
-(183, 'HSKSDD', '1', '2', '1', '0', '2021-10-06'),
-(184, 'JSLDKJ', '1', '2', '1', '1', '2021-10-06'),
-(185, 'ASDFLKJ', '1', '2', '1', '0', '2021-10-07'),
-(186, 'HSKSDD', '1', '2', '1', '0', '2021-10-07'),
-(187, 'JSLDKJ', '1', '2', '1', '0', '2021-10-07'),
-(188, 'AMS110', '4', '6', '1', '1', '2021-10-07'),
-(189, 'AMS133', '4', '6', '1', '0', '2021-10-07'),
-(190, 'AMS135', '4', '6', '1', '0', '2021-10-07'),
-(191, 'AMS144', '4', '6', '1', '1', '2021-10-07'),
-(192, 'AMS148', '4', '6', '1', '0', '2021-10-07'),
-(193, 'AMS151', '4', '6', '1', '1', '2021-10-07'),
-(194, 'AMS159', '4', '6', '1', '1', '2021-10-07'),
-(195, 'AMS161', '4', '6', '1', '1', '2021-10-07'),
-(196, 'AMS110', '4', '6', '1', '1', '2022-06-06'),
-(197, 'AMS133', '4', '6', '1', '0', '2022-06-06'),
-(198, 'AMS135', '4', '6', '1', '0', '2022-06-06'),
-(199, 'AMS144', '4', '6', '1', '1', '2022-06-06'),
-(200, 'AMS148', '4', '6', '1', '0', '2022-06-06'),
-(201, 'AMS151', '4', '6', '1', '1', '2022-06-06'),
-(202, 'AMS159', '4', '6', '1', '1', '2022-06-06'),
-(203, 'AMS161', '4', '6', '1', '1', '2022-06-06');
+(236, '3', '11', '31', '8', '0', '2024-07-19'),
+(235, '2', '11', '31', '8', '0', '2024-07-19'),
+(234, '1', '11', '31', '8', '0', '2024-07-19'),
+(237, '4', '11', '31', '8', '0', '2024-07-19'),
+(204, 'AMS110', '4', '6', '1', '1', '2024-07-13'),
+(205, 'AMS133', '4', '6', '1', '1', '2024-07-13'),
+(206, 'AMS135', '4', '6', '1', '1', '2024-07-13'),
+(207, 'AMS144', '4', '6', '1', '1', '2024-07-13'),
+(208, 'AMS148', '4', '6', '1', '1', '2024-07-13'),
+(209, 'AMS151', '4', '6', '1', '1', '2024-07-13'),
+(210, 'AMS159', '4', '6', '1', '0', '2024-07-13'),
+(211, 'AMS161', '4', '6', '1', '0', '2024-07-13'),
+(212, 'AMS110', '4', '6', '1', '1', '2024-07-14'),
+(213, 'AMS133', '4', '6', '1', '1', '2024-07-14'),
+(214, 'AMS135', '4', '6', '1', '1', '2024-07-14'),
+(215, 'AMS144', '4', '6', '1', '1', '2024-07-14'),
+(216, 'AMS148', '4', '6', '1', '1', '2024-07-14'),
+(217, 'AMS151', '4', '6', '1', '1', '2024-07-14'),
+(218, 'AMS159', '4', '6', '1', '0', '2024-07-14'),
+(219, 'AMS161', '4', '6', '1', '0', '2024-07-14'),
+(220, 'AMS005', '5', '7', '1', '1', '2024-07-14'),
+(221, 'AMS0015', '10', '16', '1', '1', '2024-07-14'),
+(222, 'AMS0015', '10', '16', '5', '1', '2024-07-16'),
+(223, 'AMS0015', '10', '18', '6', '1', '2024-07-16'),
+(224, 'AMS0018', '10', '18', '6', '1', '2024-07-16'),
+(225, 'AMS0019', '10', '18', '6', '1', '2024-07-16'),
+(226, 'AMS0015', '10', '18', '7', '1', '2024-07-18'),
+(227, 'AMS0018', '10', '18', '7', '1', '2024-07-18'),
+(228, 'AMS0019', '10', '18', '7', '1', '2024-07-18'),
+(229, 'AMS0017', '10', '18', '7', '1', '2024-07-18'),
+(230, '1', '11', '31', '8', '0', '2024-07-18'),
+(231, '2', '11', '31', '8', '1', '2024-07-18'),
+(232, '3', '11', '31', '8', '1', '2024-07-18'),
+(233, '4', '11', '31', '8', '0', '2024-07-18');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblclass`
+-- Structure de la table `tblclass`
 --
 
 CREATE TABLE `tblclass` (
   `Id` int(10) NOT NULL,
   `className` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblclass`
+-- Déchargement des données de la table `tblclass`
 --
 
 INSERT INTO `tblclass` (`Id`, `className`) VALUES
-(1, 'Seven'),
-(3, 'Eight'),
-(4, 'Nine');
+(15, 'Premier S2'),
+(14, 'Terminale L2'),
+(13, 'Second L2'),
+(12, 'Terminale S2'),
+(11, 'Premier L2'),
+(10, 'Second S2');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblclassarms`
+-- Structure de la table `tblclassarms`
 --
 
 CREATE TABLE `tblclassarms` (
@@ -132,22 +132,34 @@ CREATE TABLE `tblclassarms` (
   `classId` varchar(10) NOT NULL,
   `classArmName` varchar(255) NOT NULL,
   `isAssigned` varchar(10) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblclassarms`
+-- Déchargement des données de la table `tblclassarms`
 --
 
 INSERT INTO `tblclassarms` (`Id`, `classId`, `classArmName`, `isAssigned`) VALUES
-(2, '1', 'S1', '1'),
-(4, '1', 'S2', '1'),
-(5, '3', 'E1', '1'),
-(6, '4', 'N1', '1');
+(28, '12', 'Philosophie', '0'),
+(27, '14', 'HG', '0'),
+(26, '14', 'Math', '0'),
+(25, '14', 'Philosophie', '0'),
+(24, '11', 'Français', '0'),
+(22, '15', 'SVT', '1'),
+(21, '15', 'PC', '0'),
+(23, '11', 'HG', '0'),
+(20, '11', 'Anglais', '0'),
+(19, '15', 'Français', '0'),
+(18, '10', 'Math', '1'),
+(17, '10', 'HG', '0'),
+(16, '10', 'Histoire', '1'),
+(29, '12', 'PC', '0'),
+(30, '12', 'SVT', '0'),
+(31, '11', 'Arabe', '1');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblclassteacher`
+-- Structure de la table `tblclassteacher`
 --
 
 CREATE TABLE `tblclassteacher` (
@@ -160,22 +172,23 @@ CREATE TABLE `tblclassteacher` (
   `classId` varchar(10) NOT NULL,
   `classArmId` varchar(10) NOT NULL,
   `dateCreated` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblclassteacher`
+-- Déchargement des données de la table `tblclassteacher`
 --
 
 INSERT INTO `tblclassteacher` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`, `phoneNo`, `classId`, `classArmId`, `dateCreated`) VALUES
-(1, 'Will', 'Kibagendi', 'teacher2@mail.com', '32250170a0dca92d53ec9624f336ca24', '09089898999', '1', '2', '2022-10-31'),
-(4, 'Demola', 'Ade', 'teacher3@gmail.com', '32250170a0dca92d53ec9624f336ca24', '09672002882', '1', '4', '2022-11-01'),
-(5, 'Ryan', 'Mbeche', 'teacher4@mail.com', '32250170a0dca92d53ec9624f336ca24', '7014560000', '3', '5', '2022-10-07'),
-(6, 'John', 'Keroche', 'teacher@mail.com', '32250170a0dca92d53ec9624f336ca24', '0100000030', '4', '6', '2022-10-07');
+(7, 'Alpha', 'DIALLO', 'alpha@gmail.com', '32250170a0dca92d53ec9624f336ca24', '776543212', '5', '7', '2024-07-14'),
+(8, 'Mariame', 'DIA', 'mariame@gmail.com', '32250170a0dca92d53ec9624f336ca24', '765432112', '10', '16', '2024-07-14'),
+(9, 'Salif', 'Seck', 'seck@gmail.com', '32250170a0dca92d53ec9624f336ca24', '765432112', '15', '22', '2024-07-16'),
+(10, 'Mariame', 'DIA', 'mariae@gmail.com', '32250170a0dca92d53ec9624f336ca24', '765432119', '10', '18', '2024-07-16'),
+(11, 'Matar', 'SARR', 'sarr@gmail.com', '32250170a0dca92d53ec9624f336ca24', '9088855444', '11', '31', '2024-07-18');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblsessionterm`
+-- Structure de la table `tblsessionterm`
 --
 
 CREATE TABLE `tblsessionterm` (
@@ -184,20 +197,20 @@ CREATE TABLE `tblsessionterm` (
   `termId` varchar(50) NOT NULL,
   `isActive` varchar(10) NOT NULL,
   `dateCreated` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblsessionterm`
+-- Déchargement des données de la table `tblsessionterm`
 --
 
 INSERT INTO `tblsessionterm` (`Id`, `sessionName`, `termId`, `isActive`, `dateCreated`) VALUES
-(1, '2021/2022', '1', '1', '2022-10-31'),
-(3, '2021/2022', '2', '0', '2022-10-31');
+(8, '2024/12/12', '2', '1', '2024-07-18'),
+(7, 'Session', '1', '0', '2024-07-16');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblstudents`
+-- Structure de la table `tblstudents`
 --
 
 CREATE TABLE `tblstudents` (
@@ -210,43 +223,37 @@ CREATE TABLE `tblstudents` (
   `classId` varchar(10) NOT NULL,
   `classArmId` varchar(10) NOT NULL,
   `dateCreated` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblstudents`
+-- Déchargement des données de la table `tblstudents`
 --
 
 INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `otherName`, `admissionNumber`, `password`, `classId`, `classArmId`, `dateCreated`) VALUES
-(1, 'Thomas', 'Omari', 'none', 'AMS005', '12345', '1', '2', '2022-10-31'),
-(3, 'Samuel', 'Ondieki', 'none', 'AMS007', '12345', '1', '2', '2022-10-31'),
-(4, 'Milagros', 'Oloo', 'none', 'AMS011', '12345', '1', '2', '2022-10-31'),
-(5, 'Luis', 'Ayo', 'none', 'AMS012', '12345', '1', '4', '2022-10-31'),
-(6, 'Sandra', 'Sagero', 'none', 'AMS015', '12345', '1', '4', '2022-10-31'),
-(7, 'Smith', 'Makori', 'Mack', 'AMS017', '12345', '1', '4', '2022-10-31'),
-(8, 'Juliana', 'Kerubo', 'none', 'AMS019', '12345', '3', '5', '2022-10-31'),
-(9, 'Richard', 'Semo', 'none', 'AMS021', '12345', '3', '5', '2022-10-31'),
-(10, 'Jon', 'Mbeeka', 'none', 'AMS110', '12345', '4', '6', '2022-10-07'),
-(11, 'Aida', 'Moraa', 'none', 'AMS133', '12345', '4', '6', '2022-10-07'),
-(12, 'Miguel', 'Bush', 'none', 'AMS135', '12345', '4', '6', '2022-10-07'),
-(13, 'Sergio', 'Hammons', 'none', 'AMS144', '12345', '4', '6', '2022-10-07'),
-(14, 'Lyn', 'Rogers', 'none', 'AMS148', '12345', '4', '6', '2022-10-07'),
-(15, 'James', 'Dominick', 'none', 'AMS151', '12345', '4', '6', '2022-10-07'),
-(16, 'Ethel', 'Quin', 'none', 'AMS159', '12345', '4', '6', '2022-10-07'),
-(17, 'Roland', 'Estrada', 'none', 'AMS161', '12345', '4', '6', '2022-10-07');
+(18, 'Aziz', 'Diop', '', 'AMS0015', '12345', '10', '16', '2024-07-14'),
+(19, 'Aziz', 'Diop', '', 'AMS0015', '12345', '10', '18', '2024-07-16'),
+(20, 'Mariame', 'DIA', '', 'AMS0018', '12345', '10', '18', '2024-07-16'),
+(21, 'Alpha', 'DIALLO', '', 'AMS0019', '12345', '10', '18', '2024-07-16'),
+(22, 'Faty', 'KA', '', 'AMS0016', '12345', '10', '', '2024-07-16'),
+(23, 'Faty', 'KA', '', 'AMS0017', '12345', '10', '18', '2024-07-16'),
+(24, 'Ouseynou', 'BA', '', '1', '12345', '11', '31', '2024-07-18'),
+(25, 'Tapha', 'Marr', '', '2', '12345', '11', '31', '2024-07-18'),
+(26, 'SAMBA', 'Camara', '', '3', '12345', '11', '31', '2024-07-18'),
+(27, 'Tidiane', 'Ndao', '', '4', '12345', '11', '31', '2024-07-18');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tblterm`
+-- Structure de la table `tblterm`
 --
 
 CREATE TABLE `tblterm` (
   `Id` int(10) NOT NULL,
   `termName` varchar(20) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `tblterm`
+-- Déchargement des données de la table `tblterm`
 --
 
 INSERT INTO `tblterm` (`Id`, `termName`) VALUES
@@ -255,105 +262,105 @@ INSERT INTO `tblterm` (`Id`, `termName`) VALUES
 (3, 'Third');
 
 --
--- Indexes for dumped tables
+-- Index pour les tables déchargées
 --
 
 --
--- Indexes for table `tbladmin`
+-- Index pour la table `tbladmin`
 --
 ALTER TABLE `tbladmin`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblattendance`
+-- Index pour la table `tblattendance`
 --
 ALTER TABLE `tblattendance`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblclass`
+-- Index pour la table `tblclass`
 --
 ALTER TABLE `tblclass`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblclassarms`
+-- Index pour la table `tblclassarms`
 --
 ALTER TABLE `tblclassarms`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblclassteacher`
+-- Index pour la table `tblclassteacher`
 --
 ALTER TABLE `tblclassteacher`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblsessionterm`
+-- Index pour la table `tblsessionterm`
 --
 ALTER TABLE `tblsessionterm`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblstudents`
+-- Index pour la table `tblstudents`
 --
 ALTER TABLE `tblstudents`
   ADD PRIMARY KEY (`Id`);
 
 --
--- Indexes for table `tblterm`
+-- Index pour la table `tblterm`
 --
 ALTER TABLE `tblterm`
   ADD PRIMARY KEY (`Id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT for table `tbladmin`
+-- AUTO_INCREMENT pour la table `tbladmin`
 --
 ALTER TABLE `tbladmin`
   MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tblattendance`
+-- AUTO_INCREMENT pour la table `tblattendance`
 --
 ALTER TABLE `tblattendance`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=204;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
 
 --
--- AUTO_INCREMENT for table `tblclass`
+-- AUTO_INCREMENT pour la table `tblclass`
 --
 ALTER TABLE `tblclass`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `tblclassarms`
+-- AUTO_INCREMENT pour la table `tblclassarms`
 --
 ALTER TABLE `tblclassarms`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `tblclassteacher`
+-- AUTO_INCREMENT pour la table `tblclassteacher`
 --
 ALTER TABLE `tblclassteacher`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `tblsessionterm`
+-- AUTO_INCREMENT pour la table `tblsessionterm`
 --
 ALTER TABLE `tblsessionterm`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `tblstudents`
+-- AUTO_INCREMENT pour la table `tblstudents`
 --
 ALTER TABLE `tblstudents`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- AUTO_INCREMENT for table `tblterm`
+-- AUTO_INCREMENT pour la table `tblterm`
 --
 ALTER TABLE `tblterm`
   MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
