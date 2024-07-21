@@ -5,6 +5,6 @@
 
 **Teacher Login Details**
 
-* Email   : teacher@mail.com
+* Email   : sarr@gmail.com
 * Password: pass123
 
